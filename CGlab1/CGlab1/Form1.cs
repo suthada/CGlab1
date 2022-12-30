@@ -65,6 +65,10 @@ namespace CGlab1
             myGraphic.FillRectangle(BlackBrush, 45, 110, 15, 5);
 
             //น้องหมา
+
+            myGraphic.DrawRectangle(myPen2, 64, 444, 6, 6); //ตาขาวซ้าย
+            myGraphic.FillRectangle(WhiteBrush, 64, 444, 6, 6);
+
             myGraphic.DrawRectangle(myPen1, 40, 420, 100, 100); //ตัว
             myGraphic.DrawRectangle(myPen1, 60, 520, 20, 30); //ขาซ้าย
             myGraphic.DrawRectangle(myPen1, 100, 520, 20, 30); //ขาขวา
@@ -75,8 +79,6 @@ namespace CGlab1
             myGraphic.DrawRectangle(myPen2, 80, 470, 20, 15); //จมูก
             myGraphic.DrawRectangle(myPen2, 83, 485, 15, 9); //ปาก
 
-            myGraphic.DrawRectangle(myPen2, 64, 444, 6, 6); //ตาขาวซ้าย
-            //myGraphic.FillRectangle(WhiteBrush, 64, 444, 6, 6);
 
             myGraphic.DrawRectangle(myPen2, 109, 444, 6, 6); //ตาขาวขวา
 
@@ -87,7 +89,8 @@ namespace CGlab1
             myGraphic.DrawRectangle(myPen2, 102, 440, 20, 15); //ตาขวา
             myGraphic.FillRectangle(BlackBrush, 102, 440, 20, 15);
             myGraphic.DrawRectangle(myPen2, 60, 520, 10, 15); //ลายขาซ้ายบน1
-            myGraphic.FillRectangle(BlackBrush, 60, 520, 10, 15);
+            //myGraphic.FillRectangle(BlackBrush, 60, 520, 10, 15);
+            myGraphic.FillRectangle(WhiteBrush, 60, 520, 10, 15);
 
             myGraphic.DrawRectangle(myPen2, 70, 538, 8, 10); //ลายขาซ้ายล่าง2
             myGraphic.FillRectangle(BlackBrush, 70, 538, 8, 10);
@@ -103,6 +106,7 @@ namespace CGlab1
 
             myGraphic.DrawRectangle(myPen2, 110, 490, 30, 30); //ลายตัว2
             myGraphic.FillRectangle(BlackBrush, 110, 490, 30, 30);
+            
 
 
 
