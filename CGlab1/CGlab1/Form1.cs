@@ -25,6 +25,7 @@ namespace CGlab1
 
             Pen myPen1 = new Pen(System.Drawing.Color.Black, 5);
             Pen myPen2 = new Pen(System.Drawing.Color.Black, 3);
+            Pen myPen3 = new Pen(System.Drawing.Color.White, 1);
 
             SolidBrush DarkGreenBrush = new SolidBrush(Color.DarkGreen); //ระบายสีข้างใน
             SolidBrush DarkRedBrush = new SolidBrush(Color.DarkRed);
@@ -66,8 +67,8 @@ namespace CGlab1
 
             //น้องหมา
 
-            myGraphic.DrawRectangle(myPen2, 64, 444, 6, 6); //ตาขาวซ้าย
-            myGraphic.FillRectangle(WhiteBrush, 64, 444, 6, 6);
+            myGraphic.DrawRectangle(myPen3, 64, 444, 6, 6); //ตาขาวซ้าย
+            //myGraphic.FillRectangle(WhiteBrush, 64, 444, 6, 6);
 
             myGraphic.DrawRectangle(myPen1, 40, 420, 100, 100); //ตัว
             myGraphic.DrawRectangle(myPen1, 60, 520, 20, 30); //ขาซ้าย
@@ -89,8 +90,7 @@ namespace CGlab1
             myGraphic.DrawRectangle(myPen2, 102, 440, 20, 15); //ตาขวา
             myGraphic.FillRectangle(BlackBrush, 102, 440, 20, 15);
             myGraphic.DrawRectangle(myPen2, 60, 520, 10, 15); //ลายขาซ้ายบน1
-            //myGraphic.FillRectangle(BlackBrush, 60, 520, 10, 15);
-            myGraphic.FillRectangle(WhiteBrush, 60, 520, 10, 15);
+            myGraphic.FillRectangle(BlackBrush, 60, 520, 10, 15);
 
             myGraphic.DrawRectangle(myPen2, 70, 538, 8, 10); //ลายขาซ้ายล่าง2
             myGraphic.FillRectangle(BlackBrush, 70, 538, 8, 10);
