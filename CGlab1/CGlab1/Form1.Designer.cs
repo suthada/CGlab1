@@ -33,10 +33,10 @@
             // 
             // btnShow
             // 
-            this.btnShow.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnShow.Location = new System.Drawing.Point(945, 641);
+            this.btnShow.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnShow.Location = new System.Drawing.Point(945, 654);
             this.btnShow.Name = "btnShow";
-            this.btnShow.Size = new System.Drawing.Size(135, 56);
+            this.btnShow.Size = new System.Drawing.Size(135, 43);
             this.btnShow.TabIndex = 0;
             this.btnShow.Text = "แสดงผล";
             this.btnShow.UseVisualStyleBackColor = true;

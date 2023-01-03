@@ -27,6 +27,8 @@ namespace CGlab1
             Pen myPen1 = new Pen(System.Drawing.Color.Black, 5);
             Pen myPen2 = new Pen(System.Drawing.Color.Black, 3);
             Pen myPen3 = new Pen(System.Drawing.Color.Black, 10);
+            Pen myPen4 = new Pen(System.Drawing.Color.LightSteelBlue, 3);
+            Pen myPen5 = new Pen(System.Drawing.Color.MidnightBlue, 3);
 
             SolidBrush DarkGreenBrush = new SolidBrush(Color.DarkGreen); //ระบายสีข้างใน
             SolidBrush DarkRedBrush = new SolidBrush(Color.DarkRed);
@@ -35,6 +37,11 @@ namespace CGlab1
             SolidBrush MistyRoseBrush = new SolidBrush(Color.MistyRose); //สีที่แก้ม
             SolidBrush LightPinkBrush = new SolidBrush(Color.LightPink); //สีที่ปาก
             SolidBrush SaddleBrownBrush = new SolidBrush(Color.SaddleBrown); //สีน้ำตาลเข้ม
+            SolidBrush LightSteelBlueBrush = new SolidBrush(Color.LightSteelBlue); //สีฟ้าม่วงเทาๆ
+            SolidBrush MidnightBlueBrush = new SolidBrush(Color.MidnightBlue);
+            SolidBrush NavyBrush = new SolidBrush(Color.Navy);
+            SolidBrush DarkBlueBrush = new SolidBrush(Color.DarkBlue);
+
 
             //myGraphic.DrawLine(myPen1, 50, 50, 200, 50); //จุดเร่ิ่ม จุดสิ้นสุด [เส้นตรง]
             //myGraphic.DrawRectangle(myPen1, 15, 35, 170, 140); //จุดมุมบนซ้าย ความกว้าง ความสูงของสี่เหลี่ยม  
@@ -42,7 +49,7 @@ namespace CGlab1
             //myGraphic.DrawArc(myPen1, 100, 100, 450, 450, 0, 45); //จุดมุมบนซ้าย ความกว้าง ความสูง องศาเริ่ม องศาสิ้นสุด ตามเข็ม 
 
             //ลูกบอล
-            
+
             myGraphic.DrawEllipse(myPen1, 671, 105, 60, 60); //วงกลม1ได้แล้ว
             myGraphic.DrawLine(myPen1, 700, 0, 700, 100); //เส้น1ได้แล้ว
             myGraphic.DrawRectangle(myPen1, 690, 100, 20, 7); //สี่เหลี่ยมตกแต่ง1ได้แล้ว
@@ -166,7 +173,6 @@ namespace CGlab1
 
 
 
-
             //บ้านขนม
             myGraphic.DrawRectangle(myPen2, 195, 145, 90, 90); //ปล่องไฟ
             myGraphic.DrawRectangle(myPen2, 175, 297, 400, 250); //ตัวบ้าน ไล่สีน้ำตา
@@ -182,7 +188,100 @@ namespace CGlab1
             myGraphic.DrawLine(myPen2, 223, 422, 223, 350); // เส้นหน้าต่างซ้ายแนวตั้ง
             myGraphic.DrawLine(myPen2, 525, 422, 525, 350); // เส้นหน้าต่างขวาแนวตั้ง
 
-            
+            //ตัวหนังสือ
+            myGraphic.DrawRectangle(myPen5, 670, 177, 30, 80); //h1
+            myGraphic.FillRectangle(MidnightBlueBrush, 670, 177, 30, 80);
+
+            myGraphic.DrawRectangle(myPen5, 725, 177, 30, 80); //h2
+            myGraphic.FillRectangle(MidnightBlueBrush, 725, 177, 30, 80);
+
+            myGraphic.DrawRectangle(myPen5, 700, 200, 25, 30); //h3
+            myGraphic.FillRectangle(MidnightBlueBrush, 700, 200, 25, 30);
+
+
+
+            myGraphic.DrawRectangle(myPen5, 670, 270, 30, 80); //n1
+            myGraphic.FillRectangle(NavyBrush, 670, 270, 30, 80);
+
+            myGraphic.DrawRectangle(myPen5, 725, 300, 30, 50); //n2
+            myGraphic.FillRectangle(NavyBrush, 725, 300, 30, 50);
+
+            myGraphic.DrawRectangle(myPen5, 700, 300, 25, 30); //n3
+            myGraphic.FillRectangle(NavyBrush, 700, 300, 25, 30);
+
+
+
+            myGraphic.DrawRectangle(myPen5, 670, 370, 30, 50); //y1
+            myGraphic.FillRectangle(DarkBlueBrush, 670, 370, 30, 50);
+
+            myGraphic.DrawRectangle(myPen5, 725, 370, 30, 50); //y2
+            myGraphic.FillRectangle(DarkBlueBrush, 725, 370, 30, 50);
+
+            myGraphic.DrawRectangle(myPen5, 700, 420, 25, 40); //y3
+            myGraphic.FillRectangle(DarkBlueBrush, 700, 420, 25, 40);
+
+
+            //ตัวเลข
+            myGraphic.DrawRectangle(myPen4, 360, 140, 40, 15); //2.1 LightSteelBlueBrush
+            myGraphic.FillRectangle(LightSteelBlueBrush, 360, 140, 40, 15);
+
+            myGraphic.DrawRectangle(myPen4, 380, 155, 20, 15); //2.2
+            myGraphic.FillRectangle(LightSteelBlueBrush, 380, 155, 20, 15);
+
+            myGraphic.DrawRectangle(myPen4, 360, 170, 40, 15); //2.3
+            myGraphic.FillRectangle(LightSteelBlueBrush, 360, 170, 40, 15);
+
+            myGraphic.DrawRectangle(myPen4, 360, 185, 20, 15); //2.4
+            myGraphic.FillRectangle(LightSteelBlueBrush, 360, 185, 20, 15);
+
+            myGraphic.DrawRectangle(myPen4, 360, 200, 40, 15); //2.5
+            myGraphic.FillRectangle(LightSteelBlueBrush, 360, 200, 40, 15);
+
+
+            myGraphic.DrawRectangle(myPen4, 420, 140, 40, 15); //0.1
+            myGraphic.FillRectangle(LightSteelBlueBrush, 420, 140, 40, 15);
+
+            myGraphic.DrawRectangle(myPen4, 420, 155, 15, 45); //0.2
+            myGraphic.FillRectangle(LightSteelBlueBrush, 420, 155, 15, 45);
+
+            myGraphic.DrawRectangle(myPen4, 420, 200, 40, 15); //0.3
+            myGraphic.FillRectangle(LightSteelBlueBrush, 420, 200, 40, 15);
+
+            myGraphic.DrawRectangle(myPen4, 445, 155, 15, 45); //0.4
+            myGraphic.FillRectangle(LightSteelBlueBrush, 445, 155, 15, 45);
+
+
+            myGraphic.DrawRectangle(myPen4, 480, 140, 40, 15); //2.1
+            myGraphic.FillRectangle(LightSteelBlueBrush, 480, 140, 40, 15);
+
+            myGraphic.DrawRectangle(myPen4, 500, 155, 20, 15); //2.2
+            myGraphic.FillRectangle(LightSteelBlueBrush, 500, 155, 20, 15);
+
+            myGraphic.DrawRectangle(myPen4, 480, 170, 40, 15); //2.3
+            myGraphic.FillRectangle(LightSteelBlueBrush, 480, 170, 40, 15);
+
+            myGraphic.DrawRectangle(myPen4, 480, 185, 20, 15); //2.4
+            myGraphic.FillRectangle(LightSteelBlueBrush, 480, 185, 20, 15);
+
+            myGraphic.DrawRectangle(myPen4, 480, 200, 40, 15); //2.5
+            myGraphic.FillRectangle(LightSteelBlueBrush, 480, 200, 40, 15);
+
+
+            myGraphic.DrawRectangle(myPen4, 540, 140, 40, 15); //3.1
+            myGraphic.FillRectangle(LightSteelBlueBrush, 540, 140, 40, 15);
+
+            myGraphic.DrawRectangle(myPen4, 560, 155, 20, 15); //3.2
+            myGraphic.FillRectangle(LightSteelBlueBrush,560, 155, 20, 15);
+
+            myGraphic.DrawRectangle(myPen4, 540, 170, 40, 15); //3.3
+            myGraphic.FillRectangle(LightSteelBlueBrush, 540, 170, 40, 15);
+
+            myGraphic.DrawRectangle(myPen4, 560, 185, 20, 15); //3.4
+            myGraphic.FillRectangle(LightSteelBlueBrush, 560, 185, 20, 15);
+
+            myGraphic.DrawRectangle(myPen4, 540, 200, 40, 15); //3.5
+            myGraphic.FillRectangle(LightSteelBlueBrush, 540, 200, 40, 15);
+
         }
     }
 }
