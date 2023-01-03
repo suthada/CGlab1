@@ -11,9 +11,9 @@ using System.Windows.Forms;
 
 namespace CGlab1
 {
-    public partial class Form1 : Form
+    public partial class HNYtext : Form
     {
-        public Form1()
+        public HNYtext()
         {
             InitializeComponent();
         }
@@ -42,7 +42,7 @@ namespace CGlab1
             //myGraphic.DrawArc(myPen1, 100, 100, 450, 450, 0, 45); //จุดมุมบนซ้าย ความกว้าง ความสูง องศาเริ่ม องศาสิ้นสุด ตามเข็ม 
 
             //ลูกบอล
-
+            
             myGraphic.DrawEllipse(myPen1, 671, 105, 60, 60); //วงกลม1ได้แล้ว
             myGraphic.DrawLine(myPen1, 700, 0, 700, 100); //เส้น1ได้แล้ว
             myGraphic.DrawRectangle(myPen1, 690, 100, 20, 7); //สี่เหลี่ยมตกแต่ง1ได้แล้ว
@@ -73,7 +73,7 @@ namespace CGlab1
             myGraphic.FillRectangle(BlackBrush, 45, 102, 15, 5);
 
             //น้องหมา
-            
+
             myGraphic.DrawRectangle(myPen1, 40, 420, 100, 100); //ตัว
             myGraphic.DrawRectangle(myPen1, 60, 520, 20, 30); //ขาซ้าย
             myGraphic.DrawRectangle(myPen1, 100, 520, 20, 30); //ขาขวา
@@ -120,7 +120,7 @@ namespace CGlab1
 
             myGraphic.DrawRectangle(myPen2, 112, 492, 25, 25); //ลายตัว2
             myGraphic.FillRectangle(BlackBrush, 112, 492, 25, 25);
-            
+
             //กล่อง
             myGraphic.DrawRectangle(myPen1, 600, 490, 70, 60); //กล่อง1
             myGraphic.FillRectangle(MistyRoseBrush, 602, 492, 67, 57);
@@ -133,7 +133,7 @@ namespace CGlab1
 
             // พรม
 
-            myGraphic.DrawRectangle(myPen2, 0, 548, 819, 20); 
+            myGraphic.DrawRectangle(myPen2, 0, 548, 819, 20);
             myGraphic.FillRectangle(DarkRedBrush, 0, 550, 819, 28);
 
 
@@ -147,7 +147,7 @@ namespace CGlab1
             //Vertical แนวตั้ง
             //BackwardDiagonal แนวเฉียง
 
-
+            
             Rectangle rect4 = new Rectangle(175, 297, 400, 250); //ตัวบ้าน
             LinearGradientBrush LGBrush4 = new LinearGradientBrush(rect4, Color.Sienna, Color.BurlyWood, LinearGradientMode.Vertical);
             myGraphic.FillRectangle(LGBrush4, rect4);
@@ -163,9 +163,6 @@ namespace CGlab1
             Rectangle rect5 = new Rectangle(195, 145, 90, 90); //ปล่องไฟ
             LinearGradientBrush LGBrush5 = new LinearGradientBrush(rect5, Color.BurlyWood, Color.Peru, LinearGradientMode.Vertical);
             myGraphic.FillRectangle(LGBrush5, rect5);
-            
-
-
 
 
 
@@ -181,15 +178,11 @@ namespace CGlab1
 
             myGraphic.DrawRectangle(myPen2, 127, 217, 500, 80); //หลังคา สีน้ำตาลเข้ม
             myGraphic.FillRectangle(SaddleBrownBrush, 129, 219, 497, 77);
-            
-            
+
             myGraphic.DrawLine(myPen2, 223, 422, 223, 350); // เส้นหน้าต่างซ้ายแนวตั้ง
             myGraphic.DrawLine(myPen2, 525, 422, 525, 350); // เส้นหน้าต่างขวาแนวตั้ง
 
-
-
-
-
+            
         }
     }
 }
